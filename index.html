@@ -1,9 +1,9 @@
 <html>
     <head>
         <!-- Stylesheet -->
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <link rel="stylesheet" type="text/css" href="mdb.min.css">
-        <link rel="stylesheet" type="text/css" href="fontawesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style/main.css">
+        <link rel="stylesheet" type="text/css" href="style/mdb.min.css">
+        <link rel="stylesheet" type="text/css" href="style/fontawesome.min.css">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -44,101 +44,95 @@
     background-color: rgba(0, 136, 169, 0.8);
   }
   
-  .logo 
-  {
+  .logo {
       margin-top: 5px;
       text-decoration: none;
       color: 3A7CA5;
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
-  a:hover 
-  {
+  a:hover {
     color: rgba(0, 136, 169, 1);
   }
 
 
-  body
-  {
+  body {
       background-color: #81C3D7;
   }
 
-  .right
-  {
+  .right {
       float: right
   }
   
-  .sell
-  {
+  .sell {
       text-decoration: underline;
       color: #2C5A7C;
   }
-  .title
-  {
+  .title {
       color: white;
-      margin-top: 200px;
+      margin-top: 120px;
       font-size: 1.5em;
       font-family: 'Roboto', sans-serif;
       font-weight: 500;
 
   }
 
-  .font
-  {
+  .font {
     font-family: 'Roboto', sans-serif;
   }
 
-  .center
-  {
+  .center {
      display: flex;
      justify-content: center; 
   }
 
 
-  .items-div
-  {
+  .items-div {
       margin: 50px;
   }
 
-  .button
-  {
+  .button {
       width: 120px; 
       height: 120px;
       background-color: #E9F4FF;
       border-radius: 25px;
       margin: 1.5em;
+      text-align: center;
+      padding-top: 1.5em;
   }
 
-  .description
-  {
+  .description {
       color: white;
       text-align: center;
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
   }
 
-  .search
-  {
-      background-color: white;
+  .search {
+      background-color: #EBF3F8;
       border-radius: 30px;
       display: block;
       margin-left: auto;
       margin-right: auto;
       width: 40%;
-      height: 25px;
-      
+      height: 45px;
+      padding-left: 10px;
+  }
 
+  .notifs {
+      padding-left: 30px;
+      margin-bottom: 10px;
   }
 
 </style>
     <header>
      
-        <a class="logo" href="/"><h5>CU Marketplace</h5></a>
+        <a class="logo" href="index.html"><h5>CU Marketplace</h5></a>
         <div class = "right">
 
             <a class = "sell font" href="/">Sell something</a>
-            <!-- <i class="far fa-envelope"></i> -->
-            <a class="cta">Jane</a>
+            <img class="notifs" src="media/message.svg" />
+            <a href="html/profile.html" class="cta">Jane</a>
         </div>
     </header>
  
@@ -147,19 +141,27 @@
         <h5 class="title center">What are you looking for?</h5>
         <div class="items-div center">
             <div class="item">
-                <div class="button"></div>
+                <div class="button">
+                    <img src="media/goods.svg" />
+                </div>
                 <p class="description">Goods</p>
             </div>
             <div class="item">
-                <div class="button"></div>
+                <div class="button">
+                    <img src="media/services.svg" />
+                </div>
                 <p class="description">Services</p>
             </div>
             <div class="item">
-                <div class="button"></div>
+                <div class="button">
+                    <img src="media/housing.svg" />
+                </div>
                 <p class="description">Housing</p>
             </div>
         </div>
-        <div class="search"></div>
+        <div class="search">
+            <img src="media/search.svg" />
+        </div>
            
 
 
