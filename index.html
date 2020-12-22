@@ -24,13 +24,14 @@
     align-items: center; 
     padding: 15px 10%; 
     background-color: #EBF3F8;
+    box-shadow: 0 4px 2px -2px gray;
   }
   
 
   .cta {
     padding: 7px 40px;
-    background-color:#B7D3E3;
-    border-color: #2C5A7C;
+    background-color:rgba(183, 211, 227, 0.86);
+    border: 2px solid #2C5A7C;
     border-radius: 2em;
     cursor: pointer;
     transition: background-color 0.3s ease 0s;
@@ -124,15 +125,21 @@
       margin-bottom: 10px;
   }
 
+  .input {
+      border: none;
+      outline: none;
+      background-color: #EBF3F8;
+      width: 85%;
+  }
+
 </style>
     <header>
      
         <a class="logo" href="index.html"><h5>CU Marketplace</h5></a>
         <div class = "right">
-
             <a class = "sell font" href="/">Sell something</a>
             <img class="notifs" src="media/message.svg" />
-            <a href="html/profile.html" class="cta">Jane</a>
+            <a href="profile.html" class="cta">Jane</a>
         </div>
     </header>
  
@@ -140,12 +147,14 @@
 
         <h5 class="title center">What are you looking for?</h5>
         <div class="items-div center">
-            <div class="item">
-                <div class="button">
-                    <img src="media/goods.svg" />
+            <a href="goods.html">
+                <div class="item">
+                    <div class="button">
+                        <img src="media/goods.svg" />
+                    </div>
+                    <p class="description">Goods</p>
                 </div>
-                <p class="description">Goods</p>
-            </div>
+            </a>
             <div class="item">
                 <div class="button">
                     <img src="media/services.svg" />
@@ -161,9 +170,8 @@
         </div>
         <div class="search">
             <img src="media/search.svg" />
+            <input class="input" />
         </div>
-           
-
 
     </body>
     

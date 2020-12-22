@@ -1,0 +1,252 @@
+<html>
+    <head>
+        <!-- Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style/main.css">
+        <link rel="stylesheet" type="text/css" href="style/mdb.min.css">
+        <link rel="stylesheet" type="text/css" href="style/fontawesome.min.css">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    
+<style>
+        
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 15px 10%; 
+    background-color: #EBF3F8;
+    box-shadow: 0 4px 2px -2px gray;
+  }
+  
+
+  .cta {
+    padding: 7px 40px;
+    background-color:rgba(183, 211, 227, 0.86);
+    border: 2px solid #2C5A7C;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    color:#2C5A7C;
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+  .logo {
+      margin-top: 5px;
+      text-decoration: none;
+      color: 3A7CA5;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  a:hover {
+    color: rgba(0, 136, 169, 1);
+  }
+
+
+  body {
+      background-color: #81C3D7;
+      overflow: hidden;
+  }
+
+  .right {
+      float: right
+  }
+  
+  .sell {
+      text-decoration: underline;
+      color: #2C5A7C;
+  }
+
+  .font {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .notifs {
+      padding-left: 30px;
+      margin-bottom: 10px;
+  }
+
+  .menu {
+      width: 18%;
+      float: left;
+      height: calc(100vh - 3em);
+      background-color: #EBF3F8;
+  }
+
+  .listings {
+      width: 82%; 
+      height: calc(100vh - 3em);
+      float: right;
+      padding: 6em 8em; 
+  }
+
+  .category {
+      color: #5C6D7D;
+      font-weight: 500;
+      font-size: 20px; 
+      padding-left: 50px; 
+      margin-bottom: 10px;
+  }
+
+  .item {
+    color: rgba(92,109,125, 0.6);
+    font-weight: 400;
+    font-size: 16px; 
+    padding-left: 50px; 
+    margin-bottom: 3px;
+  }
+
+  #selected {
+      border-left: 6px solid #5C6D7D;
+      padding-left: 44px;
+      color: #5C6D7D;
+  }
+
+  .top-bar {
+    color: #EBF3F8;
+    margin-bottom: 20px; 
+  }
+
+  .subtitle {
+      font-size: 25px; 
+      font-weight: 500; 
+  }
+
+  .subcat {
+      font-size: 16px; 
+      text-decoration: underline;
+      font-weight: 400; 
+  }
+
+  .filter {
+      float: right; 
+      border: none;
+      outline: none;
+      border-radius: 20px; 
+      padding: 2px 20px 2px 20px; 
+  }
+
+  .items {
+      display: flex; 
+      flex-direction: row; 
+      height: 100vh; 
+      flex-wrap: wrap;
+  }
+
+  .card {
+      height: 280px; 
+      width: 220px; 
+      background-color: rgba(235, 243, 248, 0.8);
+      border-radius: 20px; 
+      color: #16425B;
+  }
+
+  .item-name {
+      font-weight: 500;
+      font-size: 16px;
+      padding-left: 20px; 
+  }
+
+  .item-price {
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 20px; 
+  }
+
+</style>
+    <header>
+        <a class="logo" href="index.html"><h5>CU Marketplace</h5></a>
+        <div class = "right">
+            <a class = "sell font" href="/">Sell something</a>
+            <img class="notifs" src="media/message.svg" />
+            <a href="profile.html" class="cta">Jane</a>
+        </div>
+    </header>
+    <body>
+        <div class="menu">
+            <div style="padding-top: 3em;" class="category">
+                GOODS
+            </div>
+            <div class="item" id="selected">Clothes</div>
+            <div class="item">Furniture</div>
+            <div class="item">Electronics</div>
+            <div class="item">Books</div>
+            <div class="item">Accessories</div>
+            <div class="item">Stationery</div>
+            <div style="padding-bottom: 10px;" class="item">Other</div>
+
+            <div class="category">
+                SERVICES
+            </div>
+            <div class="item">Tutoring</div>
+            <div class="item">Music</div>
+            <div class="item">Tech</div>
+            <div style="padding-bottom: 10px;" class="item">Others</div>
+
+            <div class="category">
+                HOUSING
+            </div>
+            <div class="item">Rent</div>
+            <div class="item">Sublet</div>
+            <div style="padding-bottom: 10px;" class="item">Roommate</div>
+        </div>
+        <div class="listings">
+            <div class="top-bar">
+                <img style="padding-right: 10px; float: left;" src="media/white_shirt.svg" />
+                <span style="padding-right: 10px;" class="subtitle">Goods</span>
+                <span style="padding-right: 10px;" class="subtitle">></span>
+                <span class="subcat">Clothes</span>
+
+                <input class="filter" placeholder="Filter keywords" />
+            </div>
+            <div class="items">
+                <div style="margin-right: calc((100% - 660px) / 2);" class="card">
+                    <img style="margin-top: 1.2em; margin-bottom: 5px;" src="media/good1.svg" />
+                    <div class="item-name">Black T-Shirt </div>
+                    <div class="item-price">$15 (Negotiable)</div>
+                </div>
+                <div class="card">
+                    <img style="margin-top: 1.2em; margin-bottom: 5px;" src="media/good2.svg" />
+                    <div class="item-name">Brown women's sweater</div>
+                    <div class="item-price">$30</div>
+                </div>
+                <div style="margin-left: calc((100% - 660px) / 2);" class="card">
+                    <img style="margin-top: 1.2em; margin-bottom: 5px;" src="media/good3.svg" />
+                    <div class="item-name">Men's hoodie</div>
+                    <div class="item-price">$25 (Negotiable)</div>
+                </div>
+                
+                <div style="margin-right: calc((100% - 660px) / 2); margin-top: -8em;" class="card">
+                    <img style="margin-top: 1.2em; margin-bottom: 5px;" src="media/good4.svg" />
+                    <div class="item-name">Vintage NIKE sweater</div>
+                    <div class="item-price">$20</div>
+                </div>
+                <div style="margin-top: -8em;" class="card">
+                    <img style="margin-top: 1.2em; margin-bottom: 5px;" src="media/good5.svg" />
+                    <div class="item-name">Everlane straight jeans</div>
+                    <div class="item-price">$50 (Negotiable)</div>
+                </div>
+                <div style="margin-left: calc((100% - 660px) / 2); margin-top: -8em;" class="card">
+                    <img style="margin-top: 1.2em; margin-bottom: 5px;" src="media/good6.svg" />
+                    <div class="item-name">Blue sweater vest</div>
+                    <div class="item-price">$10</div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>
