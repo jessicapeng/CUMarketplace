@@ -1,0 +1,324 @@
+<html>
+    <head>
+        <!-- Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style/main.css">
+        <link rel="stylesheet" type="text/css" href="style/mdb.min.css">
+        <link rel="stylesheet" type="text/css" href="style/fontawesome.min.css">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    
+<style>
+        
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 15px 10%; 
+    background-color: #EBF3F8;
+    box-shadow: 0 4px 2px -2px gray;
+  }
+  
+
+  .cta {
+    padding: 7px 40px;
+    background-color:rgba(183, 211, 227, 0.86);
+    border: 2px solid #2C5A7C;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    color:#2C5A7C;
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+  .logo {
+      margin-top: 5px;
+      text-decoration: none;
+      color: 3A7CA5;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  a:hover {
+    color: rgba(0, 136, 169, 1);
+  }
+
+
+  body {
+      background-color: #81C3D7;
+  }
+
+  .right {
+      float: right
+  }
+  
+  .sell {
+      text-decoration: underline;
+      color: #2C5A7C;
+  }
+  .title {
+      color: white;
+      margin-top: 120px;
+      font-size: 1.5em;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+
+  }
+
+  .font {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .center {
+     display: flex;
+     justify-content: center; 
+  }
+
+
+  .items-div {
+      margin: 50px;
+  }
+
+  .button {
+      width: 120px; 
+      height: 120px;
+      background-color: #E9F4FF;
+      border-radius: 25px;
+      margin: 1.5em;
+      text-align: center;
+      padding-top: 1.5em;
+  }
+
+  .description {
+      color: white;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+  }
+
+  .search {
+      background-color: #EBF3F8;
+      border-radius: 30px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+      height: 45px;
+      padding-left: 10px;
+  }
+
+  .notifs {
+      padding-left: 30px;
+      margin-bottom: 10px;
+  }
+
+  .input {
+      border: none;
+      outline: none;
+      background-color: #EBF3F8;
+      width: 85%;
+  }
+  .top-bar {
+    color: #EBF3F8;
+    margin-bottom: 20px; 
+  }
+
+  .subtitle {
+      font-size: 25px; 
+      font-weight: 500; 
+  }
+  .chat {
+      width: 98%; 
+      height: calc(100vh - 3em);
+      padding: 4em 6em; 
+  }
+  .chat-preview {
+      width: 430px;
+      height: 120px;
+      border-radius: 15px;
+      background-color: #EBF3F8;
+      opacity: 90%;
+      margin-bottom: 20px;
+      padding-top: 10px;
+  }
+  .buy-sell-button {
+      width: 90px;
+      height: 25px;
+      border-radius: 15px;
+      background-color: #B7D3E3;
+      border: solid 0.2px #2C5A7C;
+      display: inline-block;
+  }
+  .seller-name {
+      color: #16425B;
+      margin-left: 15px;
+      font-size: 14px;
+      font-weight: bold;
+      display: inline-block;
+  }
+  .date {
+      color: #B4B4B4;
+      font-size: 11px;
+      float: right;
+      margin-right: 20px;
+      margin-top: -5px;
+  }
+  .chat-box {
+    width: 550px;
+    height: 600px;
+    border-radius: 30px;
+    background-color: #EBF3F8;
+    opacity: 90%;
+    overflow: auto;
+    position: relative;
+  }
+  hr {
+      border-top: 2px solid #16425B;
+      margin-top: -0.5px;
+  }
+  .left-message {
+    width: 280px;
+    height: 50px;
+    background-color: #E9E9E9;
+    margin-left: 20px;
+    border-radius: 25px;
+    overflow: auto;
+    float: left;
+  }
+  .right-message {
+    width: 280px;
+    height: 50px;
+    background-color: #B4D9FF;
+    margin-right: 20px;
+    border-radius: 25px;
+    overflow: auto;
+    float: right;
+  }
+
+</style>
+    <header>
+        <a class="logo" href="index.html"><h5>CU Marketplace</h5></a>
+        <div class = "right">
+            <a class = "sell font" href="goodlisting.html">Sell something</a>
+            <img class="notifs" src="media/message.svg" />
+            <a href="profile.html" class="cta">Jane</a>
+        </div>
+    </header>
+ 
+    <body>
+        <div class="chat">
+            <div class="top-bar">
+                <img style="padding-right: 10px; float: left; margin-top: 7px;" src="media/messages.svg" />
+                <span style="padding-right: 10px;" class="subtitle">Messages</span>
+            </div>
+            <div class="left-column" style="float: left;">
+                <div class="chat-preview" style="border: solid 0.5px black;">
+                    <div class="top-row">
+                        <div class="buy-sell-button" style="margin-left: 20px; text-align: center; font-size: 12px;">Buy</div>
+                        <div class="seller-name">Crystal</div>
+                    </div>
+                    <div class="middle-row">
+                        <div style="color: #16425B; opacity: 70%; font-size: 11px; margin-left: 20px; margin-top: 5px;">for <b>The Illiad and The Odyssey Hardcover</b></div>
+                    </div>
+                    <div class="date">Dec 5</div>
+                    <div class="last-row">
+                        <div style="color: #4A4B57; font-size: 12px; margin-top: 5px; margin-left: 20px;">Great! Can you venmo me the $12.00 at @crystal.9? I'll<br>see you tomorrow!</div>
+                    </div>
+                </div>
+                <div class="chat-preview">
+                    <div class="top-row">
+                        <div class="buy-sell-button" style="margin-left: 20px; text-align: center; font-size: 12px;">Sell</div>
+                        <div class="seller-name">Jeremy</div>
+                    </div>
+                    <div class="middle-row">
+                        <div style="color: #16425B; opacity: 70%; font-size: 11px; margin-left: 20px; margin-top: 5px;">for <b>Tutoring</b></div>
+                    </div>
+                    <div class="date">Dec 2</div>
+                    <div class="last-row">
+                        <div style="color: #4A4B57; font-size: 12px; margin-top: 5px; margin-left: 20px;">Are you still interested in purchasing the Python<br>tutoring service?</div>
+                    </div>
+                </div>
+                <div class="chat-preview">
+                    <div class="top-row">
+                        <div class="buy-sell-button" style="margin-left: 20px; text-align: center; font-size: 12px;">Sell</div>
+                        <div class="seller-name">Kathy</div>
+                    </div>
+                    <div class="middle-row">
+                        <div style="color: #16425B; opacity: 70%; font-size: 11px; margin-left: 20px; margin-top: 5px;">for <b>White Standing Desk</b></div>
+                    </div>
+                    <div class="date">Nov 27</div>
+                    <div class="last-row">
+                        <div style="color: #4A4B57; font-size: 12px; margin-top: 15px; margin-left: 20px;">Thanks for purchasing the standing desk!</div>
+                    </div>
+                </div>
+                <div class="chat-preview">
+                    <div class="top-row">
+                        <div class="buy-sell-button" style="margin-left: 20px; text-align: center; font-size: 12px;">Buy</div>
+                        <div class="seller-name">Hannah</div>
+                    </div>
+                    <div class="middle-row">
+                        <div style="color: #16425B; opacity: 70%; font-size: 11px; margin-left: 20px; margin-top: 5px;">for <b>Blue Sweater Vest</b></div>
+                    </div>
+                    <div class="date">Nov 6</div>
+                    <div class="last-row">
+                        <div style="color: #4A4B57; font-size: 12px; margin-top: 15px; margin-left: 20px;">I'll meet you at Lerner for the sweater vest then!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column" style="float: right;">
+                <div class="chat-box">
+                        <div style="font-size: 18px; color: #16425B; margin-top: 10px; margin-left: 30px; font-weight: bold;">Crystal</div>
+                        <div style="color: #16425B; opacity: 70%; font-size: 11px; margin-left: 30px; margin-bottom: 5px;">for <b>The Illiad and The Odyssey Hardcover</b></div>
+                        <hr>
+                        <div>
+                            <div class="right-message" style="margin-top: 5px;">
+                                <div style="font-size: 11px; margin-top: 8px; margin-left: 20px;">Hello I would like to purchase this book for my<br>LitHum class!</div>
+                            </div>
+                        </div>
+                        <div >
+                            <div class="left-message" style="margin-top: 15px;">
+                                <div style="font-size: 11px; margin-top: 8px; margin-left: 20px;">Sure! Can you pickup or would you like it<br>delivered?</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="right-message" style="margin-top: 15px;">
+                                <div style="font-size: 11px; margin-top: 8px; margin-left: 20px;">I can pick it up tomorrow at 1pm from Ruggles<br>Hall if that works for you?</div>
+                            </div>
+                        </div>
+                        <div >
+                            <div class="left-message" style="margin-top: 15px;">
+                                <div style="font-size: 11px; margin-top: 8px; margin-left: 20px;">Great! Can you venmo me the $12.00 at<br>@crystal.9? I'll see you tomorrow!</div>
+                            </div>
+                        </div>
+                        <div class="send-message" style="position: absolute; bottom: 30px;">
+                            <img style="margin-left: 20px; float: left; width: 30px; height: 25px;" src="media/attach-image.svg" />
+                            <div style="width: 450px; height: 25px; font-size: 13px; border: solid 0.2px #2C5A7C; border-radius: 15px; margin-left: 15px; float: right; font-size: 11px; padding-left: 20px; padding-top: 2px; padding-bottom: 2px;">Type a message</div>
+                        </div>
+                        
+                        
+                </div>
+
+            </div>
+
+        </div>
+        
+
+
+
+
+    </body>
+    
+</html>
